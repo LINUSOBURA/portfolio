@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: Poppins, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.hero-text {
+  font-family: Baskerville;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+u {
+  color: #8fff00;
+  text-decoration: none;
+}
+
+button :hover {
+  opacity: 50%;
+}
