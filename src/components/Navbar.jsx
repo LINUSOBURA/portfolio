@@ -16,7 +16,7 @@ export default function Navbar() {
           <li className="hover:text-custom-green">
             <a href="#projects">Projects</a>
           </li>
-          <li className="hover:text-custom-green">
+          <li className="hover:text-custom-green mr-4">
             <a href="#">Blog</a>
           </li>
         </ul>
