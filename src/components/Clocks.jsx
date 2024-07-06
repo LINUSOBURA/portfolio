@@ -10,10 +10,10 @@ export default function Clocks(props) {
   useEffect(() => {
     setTimeout(() => {
       setClockImages([
-        "src/assets/landing.png",
-        "src/assets/shop.png",
-        "src/assets/checkout.png",
-        "src/assets/orders profile.png",
+        "landing.png",
+        "shop.png",
+        "checkout.png",
+        "orders profile.png",
       ]);
     }, 1000);
   }, []);

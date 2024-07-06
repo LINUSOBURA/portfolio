@@ -38,7 +38,7 @@ export default function Projects() {
         <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 mx-auto">
           <div className="bg-zinc-700 p-auto flex flex-col justify-center">
             <img
-              src="src/assets/clocks.png"
+              src="clocks.png"
               alt="clocks_ke"
               className="w-3/4 h-3/4 mx-auto"
             />
@@ -55,7 +55,7 @@ export default function Projects() {
           </div>
           <div className="bg-zinc-700 p-auto flex flex-col justify-center">
             <img
-              src="src/assets/getfit.png"
+              src="getfit.png"
               alt="getfit"
               className="w-3/4 h-3/4 mx-auto"
             />
@@ -70,11 +70,7 @@ export default function Projects() {
             </span>
           </div>
           <div className="bg-zinc-700 p-auto flex flex-col justify-center">
-            <img
-              src="src/assets/apod.png"
-              alt="Apod"
-              className="w-3/4 h-3/4 mx-auto"
-            />
+            <img src="apod.png" alt="Apod" className="w-3/4 h-3/4 mx-auto" />
             <span className="flex justify-between p-4">
               <p className=" text-slate-300">Apod</p>
               {apodDescription && <Apod apodDescription={apodDescription} />}

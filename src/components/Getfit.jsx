@@ -10,9 +10,9 @@ export default function Getfit(props) {
   useEffect(() => {
     setTimeout(() => {
       setClockImages([
-        "src/assets/getfit-home.jpg",
-        "src/assets/getfit-generate.jpg",
-        "src/assets/getfit-work.jpg",
+        "getfit-home.jpg",
+        "getfit-generate.jpg",
+        "getfit-work.jpg",
       ]);
     }, 1000);
   }, []);

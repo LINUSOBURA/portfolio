@@ -9,7 +9,7 @@ export default function Apod(props) {
 
   useEffect(() => {
     setTimeout(() => {
-      setClockImages(["src/assets/apod-home.jpg", "src/assets/apod-desc.jpg"]);
+      setClockImages(["apod-home.jpg", "apod-desc.jpg"]);
     }, 1000);
   }, []);
 
