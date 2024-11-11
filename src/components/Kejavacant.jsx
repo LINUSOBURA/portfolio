@@ -1,68 +1,59 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import CarouselComponent from "./CarouselComponent";
-import PropTypes from "prop-types";
 
-export default function Clocks({ clocksDescription = "" }) {
+export default function Kj(props) {
+  const { kjDescription } = props;
   const dialogRef = useRef(null);
-  const [clockImages, setClockImages] = useState([]);
+  const [kjImages, setKjImages] = useState([]);
 
   useEffect(() => {
     setTimeout(() => {
-      setClockImages([
-        "landing.png",
-        "shop.png",
-        "checkout.png",
-        "orders profile.png",
-      ]);
+      setKjImages(["home.png", "vacants.png", "house.png", "post.png"]);
     }, 1000);
   }, []);
 
   useEffect(() => {
-    if (clocksDescription && dialogRef.current) {
+    if (kjDescription && dialogRef.current) {
       dialogRef.current.showModal();
     } else if (dialogRef.current) {
       dialogRef.current.close();
     }
-  }, [clocksDescription]);
+  }, [kjDescription]);
   return (
     <div>
       <dialog
         ref={dialogRef}
-        id="clocks"
+        id="kj"
         className="backdrop:bg-neutral-800 backdrop:opacity-80 bg-zinc-900 text-slate-200 p-4"
       >
         <div>
           <span className="flex justify-end">
-            <button onClick={() => document.querySelector("#clocks").close()}>
+            <button onClick={() => document.querySelector("#kj").close()}>
               <i className="fa-regular fa-circle-xmark text-custom-green font-semibold"></i>
             </button>
           </span>
 
-          <h3 className="text-xl sm:2xl mb-2">Clocks_Ke</h3>
+          <h3 className="text-xl sm:2xl mb-2">KejaVacant</h3>
           <div className="max-w-lg mx-auto">
-            <CarouselComponent autoSlide={true} images={clockImages} />
+            <CarouselComponent autoSlide={true} images={kjImages} />
           </div>
 
           <p className="mt-5 text-sm lg:text-xl">
-            CLOCKS_KE is an online shopping platform for custom made resin
-            Clocks. It has been built with Django, HTML, CSS, and
-            Javascript(JQUERY). For the database it is using the default sqlite3
-            provided by django by default.
+            Keja Vacant is a platform that enables landloads and real estate
+            agents to post their vacant houses and spaces, and enables users to
+            easily find what they are looking for for a particular location and
+            price range. This has been built using NextJs14 and is still under
+            active development.
           </p>
 
           <span className="flex items-center justify-center gap-4">
             {" "}
             <button className="mt-5 px-2 py-1 border border-custom-green">
               <a
-                href="https://www.youtube.com/watch?v=x26AIcgGEYA"
+                href="https://youtu.be/Vmu2vXsv-i8?si=LKBoLOM2KBS2t0wP"
                 target="_blank"
               >
-                Presentation
-              </a>
-            </button>
-            <button className="mt-5 px-2 py-1 border border-custom-green">
-              <a href="https://clockske.onrender.com/" target="_blank">
                 Visit
               </a>
             </button>
@@ -72,7 +63,3 @@ export default function Clocks({ clocksDescription = "" }) {
     </div>
   );
 }
-
-Clocks.propTypes = {
-  clocksDescription: PropTypes.string,
-};

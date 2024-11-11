@@ -2,11 +2,13 @@ import Clocks from "./Clocks";
 import Getfit from "./Getfit";
 import { useState } from "react";
 import Apod from "./Apod";
+import Kj from "./Kejavacant";
 
 export default function Projects() {
   const [clocksDescription, setClocksDescription] = useState(false);
   const [getfitDescription, setGetfitDescription] = useState(false);
   const [apodDescription, setApodDescription] = useState(false);
+  const [kjDescription, setKjDescription] = useState(false);
 
   return (
     <div>
@@ -75,6 +77,16 @@ export default function Projects() {
               <p className=" text-slate-300">Apod</p>
               {apodDescription && <Apod apodDescription={apodDescription} />}
               <button onClick={() => setApodDescription(!apodDescription)}>
+                <i className="fa-solid fa-eye fa-fade text-custom-green"></i>
+              </button>
+            </span>
+          </div>
+          <div className="bg-zinc-700 p-auto flex flex-col justify-center">
+            <img src="home.png" alt="kj" className="w-3/4 h-3/4 mx-auto" />
+            <span className="flex justify-between p-4">
+              <p className=" text-slate-300">KejaVacant</p>
+              {kjDescription && <Kj kjDescription={kjDescription} />}
+              <button onClick={() => setKjDescription(!kjDescription)}>
                 <i className="fa-solid fa-eye fa-fade text-custom-green"></i>
               </button>
             </span>

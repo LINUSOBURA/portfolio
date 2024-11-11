@@ -4,7 +4,10 @@ export default function Home() {
   return (
     <div
       className="home min-h-screen w-screen p-2 bg-center"
-      style={{ backgroundImage: "url('cover2.png')", backgroundSize: "cover" }}
+      style={{
+        backgroundImage: "url('cover2 (5).png')",
+        backgroundSize: "cover",
+      }}
     >
       <Navbar />
 
@@ -14,8 +17,9 @@ export default function Home() {
             Linus <br /> <span className="ml-10 md:ml-16">Obura</span>
           </h1>
           <h3 className="text-slate-400 mt-4 md:w-1/2">
-            Hello, Welcome to my portfolio! I'm a software Engineer with over
-            three years of experience. Take a look around and I hope we connect.
+            Hello, Welcome to my portfolio! I&apos;m a software Engineer with
+            over three years of experience. Take a look around and I hope we
+            connect.
           </h3>
         </div>
       </div>
