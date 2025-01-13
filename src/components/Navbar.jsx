@@ -17,7 +17,7 @@ export default function Navbar() {
             <a href="#projects">Projects</a>
           </li>
           <li className="hover:text-custom-green mr-4">
-            <a href="#">Blog</a>
+            <a href="https://securelinus.blogspot.com/" target="_blank">Blog</a>
           </li>
         </ul>
       </div>
